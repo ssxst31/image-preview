@@ -9,7 +9,9 @@ export default function MainPage() {
 
   return (
     <div className="relative">
-      {imgFile && <img src={imgFile} className="absolute" alt="img" />}
+      {imgFile && (
+        <img src={imgFile} className="user-drag-none absolute" alt="img" />
+      )}
       {dragAbleFileList.map((file: any) => (
         <DragContainer>
           <img
