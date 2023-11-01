@@ -16,8 +16,12 @@ export default function MainPage() {
         <DragContainer>
           <img
             className="select-none user-drag-none absolute"
-            src={file}
+            src={file.img}
             alt="img"
+            style={{
+              width: Number(file.width) ?? 100,
+              height: Number(file.height) ?? 100,
+            }}
           />
         </DragContainer>
       ))}
